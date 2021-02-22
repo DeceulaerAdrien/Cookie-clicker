@@ -1,23 +1,45 @@
 let score = new Number (document.getElementById('score').textContent);
 let x = 1;
-
+let y = 1;
 
 document.getElementById('click').addEventListener('click',()=>{
     score += x;
     document.getElementById('score').innerHTML = score ;
 });
 
-document.getElementById('bonusOne').addEventListener('click',()=>{
-    if(score >= (x *(x + 1)*5)){
-        score = score - (x *(x + 1)*5);
+
+    document.getElementById('bonusOne').addEventListener('click',()=>{
+    if(score >= (x *(x + 1)*25)){
+        score = score - (x *(x + 1)*25);
         document.getElementById('score').innerHTML = score ;
-        x *= 2;
+        x += 1;
     }
     else{
         x = x;
     }
-    document.getElementById('bonusOne').innerHTML = (x *(x + 1)*5);
+    document.getElementById('bonusOne').innerHTML = (x *(x + 1)*25) + ` <br> x${x*2} `;
 });
+
+document.getElementById('bonusTwo').addEventListener('click',()=>{
+
+    if(score >= (y *(y + 1)*10)){
+        score = score - (y *(y + 1)*10);
+        document.getElementById('score').innerHTML = score ;
+        y += 1;
+        setInterval(function () { 
+            document.getElementById('click').click();
+        },5000/y);        
+    }
+    else{
+        y = y;
+    }
+    document.getElementById('bonusTwo').innerHTML = `autoclick <br> ${(y *(y + 1)*10)}`;
+
+});
+
+
+
+
 
 
 console.log(score);
