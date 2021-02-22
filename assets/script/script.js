@@ -6,7 +6,6 @@ document.getElementById('click').addEventListener('click',()=>{
     score += x;
     document.getElementById('score').innerHTML = score ;
 });
-
 document.getElementById('bonusOne').addEventListener('click',()=>{
     if(score >= (x *(x + 1)*25)){
         score = score - (x *(x + 1)*25);
@@ -33,12 +32,4 @@ document.getElementById('bonusTwo').addEventListener('click',()=>{
         y = y;
     }
     document.getElementById('bonusTwo').innerHTML = `${(y *(y + 1)*10)} <br> autoclick`;
-
 });
-
-
-
-
-
-
-console.log(score);
