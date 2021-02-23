@@ -25,10 +25,10 @@ body {
     .clicker {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        margin-top: 20rem;
         border: 1px solid red;
+        height: 100vh;
         .click {
             background-color: Transparent;
             background-repeat: no-repeat;
@@ -55,7 +55,10 @@ body {
             width: 100%;
             font-size: 20px;
             font-family: 'Luckiest Guy', cursive;
-            background: url("../images/bck.gif");
+            background: url("../images/bck.png");
+            border: none;
+            border-radius: 20px;
+            margin: 10px;
         }
         button img {
             width: 50px;
@@ -67,10 +70,20 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid green;
         width: 10%;
         button {
             width: 100%;
+            font-size: 20px;
+            font-family: 'Luckiest Guy', cursive;
+            background: url("../images/bck.png");
+            border: none;
+            border-radius: 20px;
+            margin: 10px;
+        }
+        button img {
+            width: 50px;
+            height: 30px;
+            padding-right: 10px;
         }
     }
 }

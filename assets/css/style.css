@@ -38,14 +38,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 20rem;
   border: 1px solid red;
+  height: 100vh;
 }
 
 .container .clicker .click {
@@ -88,7 +87,10 @@ body {
   width: 100%;
   font-size: 20px;
   font-family: 'Luckiest Guy', cursive;
-  background: url("../images/bck.gif");
+  background: url("../images/bck.png");
+  border: none;
+  border-radius: 20px;
+  margin: 10px;
 }
 
 .container .bonus button img {
@@ -107,11 +109,22 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid green;
   width: 10%;
 }
 
 .container .auto button {
   width: 100%;
+  font-size: 20px;
+  font-family: 'Luckiest Guy', cursive;
+  background: url("../images/bck.png");
+  border: none;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.container .auto button img {
+  width: 50px;
+  height: 30px;
+  padding-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */

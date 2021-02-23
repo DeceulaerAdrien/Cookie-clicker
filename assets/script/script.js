@@ -1,6 +1,7 @@
 let score = new Number(document.getElementById('score').textContent);
 let x = 1;
 let y = 1;
+
 let health = 15;
 let cpt = 0;
 document.getElementById('click').addEventListener('click', () => {
@@ -24,7 +25,7 @@ document.getElementById('bonusHealth').addEventListener("click", () => {
         score = score - health;
         document.getElementById('score').innerHTML = score;
         document.getElementById("castor").src = "./assets/images/castor.png";
-        document.getElementById('bonusHealth').innerHTML = `<img src="./assets/images/healthkit.png"> ${health *= 2} points`;
+        document.getElementById('bonusHealth').innerHTML = `<img src="./assets/images/healthkit.png"><br>${health *= 2} points`;
         console.log(health);
         cpt = 0;
     }
