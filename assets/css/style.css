@@ -13,6 +13,7 @@ body {
   background-size: cover;
   background-color: #464646;
   font-size: 20px;
+  font-family: 'Luckiest Guy', cursive;
 }
 
 .container {
@@ -80,12 +81,20 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid green;
   width: 10%;
 }
 
 .container .bonus button {
   width: 100%;
+  font-size: 20px;
+  font-family: 'Luckiest Guy', cursive;
+  background: url("../images/bck.gif");
+}
+
+.container .bonus button img {
+  width: 50px;
+  height: 30px;
+  padding-right: 10px;
 }
 
 .container .auto {

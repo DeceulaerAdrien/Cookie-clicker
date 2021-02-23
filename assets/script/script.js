@@ -20,7 +20,7 @@ document.getElementById('click').addEventListener('click', () => {
 
 document.getElementById('bonusHealth').addEventListener("click", () => {
 
-    if (cpt >= health) {
+    if (score >= health) {
         score = score - health;
         document.getElementById('score').innerHTML = score;
         document.getElementById("castor").src = "./assets/images/castor.png";
@@ -38,7 +38,7 @@ document.getElementById('bonusOne').addEventListener('click', () => {
     } else {
         x = x;
     }
-    document.getElementById('bonusOne').innerHTML = (x * (x + 1) * 25) + ` <br> x${x*2} `;
+    document.getElementById('bonusOne').innerHTML = `<img src="./assets/images/buche.png" height="10px"> ${(x * (x + 1) * 25)}` + `<br> <img src="./assets/images/multiplicator.png" height="10px">${x*2} `;
 });
 
 document.getElementById('bonusTwo').addEventListener('click', () => {

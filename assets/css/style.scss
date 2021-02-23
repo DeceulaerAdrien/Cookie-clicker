@@ -12,6 +12,7 @@ body {
     background-size: cover;
     background-color: #464646;
     font-size: 20px;
+    font-family: 'Luckiest Guy', cursive;
 }
 
 .container {
@@ -49,10 +50,17 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 1px solid green;
         width: 10%;
         button {
             width: 100%;
+            font-size: 20px;
+            font-family: 'Luckiest Guy', cursive;
+            background: url("../images/bck.gif");
+        }
+        button img {
+            width: 50px;
+            height: 30px;
+            padding-right: 10px;
         }
     }
     .auto {
