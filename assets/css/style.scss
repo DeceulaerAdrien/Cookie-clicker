@@ -26,6 +26,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 5rem;
         border: 1px solid red;
         .click {
             background-color: Transparent;
@@ -37,8 +38,7 @@ body {
             justify-items: flex-end;
         }
         .click:active {
-            opacity: 1;
-            transform: translateY(150px);
+            transform: scale(0.8);
         }
     }
     .bonus {
