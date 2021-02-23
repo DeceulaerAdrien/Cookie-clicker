@@ -2,14 +2,17 @@ let score = new Number(document.getElementById('score').textContent);
 let x = 1;
 let y = 1;
 let health = 15;
-
+let cpt = 0;
 document.getElementById('click').addEventListener('click', () => {
+    cpt++;
     score += x;
     document.getElementById('score').innerHTML = `<img src="./assets/images/buche.png">  ${score}`;
-    if (score >= 10) {
+
+    if (cpt >= 10) {
         document.getElementById("castor").src = "./assets/images/castor1.png";
+
     }
-    if (score >= 20) {
+    if (cpt >= 20) {
         document.getElementById("castor").src = "./assets/images/castor2.png";
     }
 
@@ -17,12 +20,13 @@ document.getElementById('click').addEventListener('click', () => {
 
 document.getElementById('bonusHealth').addEventListener("click", () => {
 
-    if (score >= health) {
+    if (cpt >= health) {
         score = score - health;
         document.getElementById('score').innerHTML = score;
         document.getElementById("castor").src = "./assets/images/castor.png";
         document.getElementById('bonusHealth').innerHTML = `<img src="./assets/images/healthkit.png"> ${health *= 2} points`;
         console.log(health);
+        cpt = 0;
     }
 });
 
@@ -49,5 +53,5 @@ document.getElementById('bonusTwo').addEventListener('click', () => {
     } else {
         y = y;
     }
-    document.getElementById('bonusTwo').innerHTML = `${(y *(y + 1)*10)} <br> autoclick`;
+    document.getElementById('bonusTwo').innerHTML = `<img src="./assets/images/hammer.png"> ${(y *(y + 1)*10)} <br> autoclick`;
 });
