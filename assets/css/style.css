@@ -43,7 +43,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 6rem;
+  margin-top: 5rem;
   border: 1px solid red;
 }
 
@@ -51,7 +51,7 @@ body {
   background-color: Transparent;
   background-repeat: no-repeat;
   border: none;
-  cursor: pointer;
+  cursor: url("../images/hammer.png"), auto;
   outline: none;
   border: 1px solid red;
   justify-items: flex-end;
