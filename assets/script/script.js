@@ -1,9 +1,14 @@
 let score = new Number(document.getElementById('score').textContent);
 let x = 1;
 let y = 1;
-
 let health = 15;
 let cpt = 0;
+
+let hideBTN = document.getElementById("randomID").style.visibility = "hidden";
+let randomBtn = Math.floor(Math.random() * (10 - 1) + 1);
+console.log(randomBtn);
+
+
 document.getElementById('click').addEventListener('click', () => {
     cpt++;
     score += x;
@@ -16,6 +21,19 @@ document.getElementById('click').addEventListener('click', () => {
     if (cpt >= 20) {
         document.getElementById("castor").src = "./assets/images/castor2.png";
     }
+    /*  */
+    if (randomBtn == score) {
+        setTimeout(() => {
+            hideBTN = document.getElementById("randomID").style.visibility = 'visible';
+            score = score + 1000;
+            document.getElementById('score').innerHTML = `<img src="./assets/images/buche.png">  ${score}`;
+            console.log("deuxieme" + score);
+        }, 1000);
+
+    } else if (randomBtn != score) {
+        hideBTN = document.getElementById("randomID").style.visibility = 'hidden';
+    }
+
 
 });
 
