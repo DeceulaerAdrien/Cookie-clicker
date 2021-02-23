@@ -14,6 +14,7 @@ body {
   background-color: #464646;
   font-size: 20px;
   font-family: 'Luckiest Guy', cursive;
+  cursor: url("../images/hammer.png"), auto;
 }
 
 .container {
@@ -85,7 +86,9 @@ body {
   font-size: 20px;
   font-family: 'Luckiest Guy', cursive;
   background: url("../images/bck.png");
+  cursor: url("../images/hammer.png"), auto;
   border: none;
+  outline: none;
   border-radius: 20px;
   margin: 10px;
 }
@@ -115,6 +118,8 @@ body {
   font-family: 'Luckiest Guy', cursive;
   background: url("../images/bck.png");
   border: none;
+  cursor: url("../images/hammer.png"), auto;
+  outline: none;
   border-radius: 20px;
   margin: 10px;
 }
