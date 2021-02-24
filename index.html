@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>CastorClicker</title>
+    <title>Document</title>
 </head>
-
 <body>
-    <div class="container">
-        <div class="bonus">
-            <button class="bonusOne" id="bonusOne">50 <br> x2</button>
-            <button class="bonusHealth" id="bonusHealth"><img src="./assets/images/healthkit.png" alt=""> 15 points</button>
-        </div>
-        <div class="clicker">
-            <div class="score" id="score">
-                0
-            </div>
-            <button class="click" id="click"><img id="castor" src="./assets/images/castor.png"></button>
-        </div>
-        <div class="auto">
-            <button class="bonusTwo" id="bonusTwo"><img src="./assets/images/hammer.png" width="20px" height="20px"alt=""> 20 <br> autoclick</button>
-        </div>
-
+    <div class="autoClickers">
+        <button id="marteau">1</button>
+        <button id="epee">2</button>
+        <button id="pistolet">3</button>
+        <button id="fusil">4</button>
+        <button id="mittrailleuse">5</button>
+        <button id="bazooka">6</button>
     </div>
-
-
-
+    <div class="clicker">
+        <img class="buche" src="assets/images/buche.png" alt="score" draggable="false"><span class="score" id="score">0</span>
+        <button id="clickerMain"><img src="assets/images/castor.png" alt="clickerButton" draggable="false" id="castor"></button>
+    </div>
+    <div class="mult">
+        <button id="marteau">1</button>
+        <button id="epee">2</button>
+        <button id="pistolet">3</button>
+        <button id="fusil">4</button>
+        <button id="mittrailleuse">5</button>
+        <button id="bazooka">6</button>
+    </div>
 </body>
 <script src="./assets/script/script.js"></script>
-
 </html>
