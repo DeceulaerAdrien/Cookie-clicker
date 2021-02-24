@@ -1,4 +1,4 @@
-let score = 1000000 /* new Number(document.getElementById('score').textContent) */ ;
+let score = new Number(document.getElementById('score').textContent);
 
 document.getElementById('clickerMain').addEventListener('click',() => {
     score ++
