@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let score = new Number(document.getElementById('score').textContent);
 let x = 1;
 let y = 1;
@@ -48,17 +49,20 @@ document.getElementById('bonusHealth').addEventListener("click", () => {
         document.getElementById('bonusHealth').innerHTML = `<img src="./assets/images/healthkit.png"><br>${health *= 2} points`;
         console.log(health);
         cpt = 0;
-    }
-});
+=======
+let score = 30000/* new Number(document.getElementById('score').textContent) */;
 
-document.getElementById('bonusOne').addEventListener('click', () => {
-    if (score >= (x * (x + 1) * 25)) {
-        score = score - (x * (x + 1) * 25);
-        document.getElementById('score').innerHTML = `<img src="./assets/images/buche.png">  ${score}`;
-        x += 1;
-    } else {
-        x = x;
+document.getElementById('clickerMain').addEventListener('click',() => {
+    score ++
+    document.getElementById('score').innerHTML = `${score}`
+    if(score >= 1000){
+        document.getElementById('castor').src = "./assets/images/castor1.png"
+>>>>>>> adrien
     }
+    if(score >= 10000){
+        document.getElementById('castor').src = "./assets/images/castor2.png"
+    }
+<<<<<<< HEAD
     document.getElementById('bonusOne').innerHTML = `<img src="./assets/images/buche.png" height="10px"> ${(x * (x + 1) * 25)}` + `<br> <img src="./assets/images/multiplicator.png" height="10px">${x*2} `;
 });
 
@@ -68,11 +72,20 @@ document.getElementById('bonusTwo').addEventListener('click', () => {
         score = score - (y * (y + 1) * 10);
         document.getElementById('score').innerHTML = `<img src="./assets/images/buche.png">  ${score}`;
         y += 1;
+=======
+})
+let auto = 1;
+document.getElementById('mult1').addEventListener('click', () => {
+
+    if (score >= (auto * (auto + 1) * 50)) {
+        score = score - (auto * (auto + 1) * 50);
+        document.getElementById('score').innerHTML = `${score}`;
+        auto += 1;
+>>>>>>> adrien
         setInterval(function() {
-            document.getElementById('click').click();
-        }, 10000 / y);
+            document.getElementById('clickerMain').click();
+        }, 10000 / auto);
     } else {
-        y = y;
+        auto = auto;
     }
-    document.getElementById('bonusTwo').innerHTML = `<img src="./assets/images/hammer.png"> ${(y *(y + 1)*10)} <br> autoclick`;
 });

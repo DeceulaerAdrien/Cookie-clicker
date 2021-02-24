@@ -1,91 +1,85 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('../script/script.js');
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-image: url("../images/background.jpg");
-    background-position: center center;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    <<<<<<< HEAD background-size: cover;
     background-color: #464646;
     font-size: 20px;
     font-family: 'Luckiest Guy', cursive;
     cursor: url("../images/hammer.png"), auto;
+    =======background-position: center;
+    >>>>>>>adrien
 }
 
-.container {
+.mult {
+    width: 20%;
     display: flex;
-    justify-content: space-around;
+    align-content: center;
     align-items: center;
-    width: 100%;
-    height: 100vh;
-    .clicker {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        height: 100vh;
-        .click {
-            background-color: Transparent;
-            background-repeat: no-repeat;
-            border: none;
-            cursor: url("../images/hammer.png"), auto;
-            outline: none;
-            justify-items: flex-end;
-        }
-        .click img {
-            width: 20vw;
-        }
-        .click:active {
-            transform: scale(0.8);
-        }
+    flex-direction: column;
+    border-left: black solid 1px;
+    background-color: rgba($color: #042002, $alpha: 0.2);
+    button {
+        width: 100%;
+        height: 20%;
+        outline: transparent;
+        background-image: url(../images/wooden-textured-background.jpg);
     }
-    .bonus {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 10%;
-        button {
-            width: 100%;
-            font-size: 20px;
-            font-family: 'Luckiest Guy', cursive;
-            background: url("../images/bck.png");
-            cursor: url("../images/hammer.png"), auto;
-            border: none;
-            outline: none;
-            border-radius: 20px;
-            margin: 10px;
-        }
-        button img {
-            width: 50px;
-            height: 30px;
-            padding-right: 10px;
-        }
-    }
-    .auto {
+}
+
+.clicker {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    button {
         display: flex;
         justify-content: center;
-        align-items: center;
-        width: 10%;
-        button {
-            width: 100%;
-            font-size: 20px;
-            font-family: 'Luckiest Guy', cursive;
-            background: url("../images/bck.png");
-            border: none;
-            cursor: url("../images/hammer.png"), auto;
-            outline: none;
-            border-radius: 20px;
-            margin: 10px;
+        width: 250px;
+        height: 250px;
+        background-color: transparent;
+        border-radius: 100%;
+        border: none;
+        outline: transparent;
+        margin-top: 40%;
+         :active {
+            transform: scale(0.9);
         }
-        button img {
-            width: 50px;
-            height: 30px;
-            padding-right: 10px;
+        img {
+            width: 80%;
         }
+    }
+}
+
+.buche {
+    padding-top: 10%;
+}
+
+.score {
+    font-size: 200%;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.autoClickers {
+    width: 20%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: black solid 1px;
+    background-color: rgba($color: #042002, $alpha: 0.2);
+    button {
+        width: 100%;
+        height: 20%;
+        outline: transparent;
+        background-image: url(../images/wooden-textured-background.jpg);
     }
 }
