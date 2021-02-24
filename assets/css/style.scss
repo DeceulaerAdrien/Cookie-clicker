@@ -18,6 +18,10 @@ body {
     background-position: center;
 }
 
+.nooo {
+    fill: red;
+}
+
 .mult {
     width: 20%;
     display: flex;
@@ -31,6 +35,7 @@ body {
         height: 20%;
         outline: transparent;
         background-image: url(../images/wooden-textured-background.jpg);
+        color: white;
     }
 }
 
@@ -49,6 +54,7 @@ body {
         border: none;
         outline: transparent;
         margin-top: 40%;
+        color: white;
          :active {
             transform: scale(0.9);
         }
@@ -80,5 +86,6 @@ body {
         height: 20%;
         outline: transparent;
         background-image: url(../images/wooden-textured-background.jpg);
+        color: white;
     }
 }
