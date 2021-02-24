@@ -1,198 +1,123 @@
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 @import url("../script/script.js");
 body {
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  background-image: url(../images/background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-<<<<<<< HEAD
-  background-size: cover;
-  background-color: #464646;
-  font-size: 20px;
-  font-family: 'Luckiest Guy', cursive;
-  cursor: url("../images/hammer.png"), auto;
-=======
-  background-position: center;
->>>>>>> adrien
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    <<<<<<< HEAD background-size: cover;
+    background-color: #464646;
+    font-size: 20px;
+    font-family: 'Luckiest Guy', cursive;
+    cursor: url("../images/hammer.png"), auto;
+    =======background-position: center;
+    >>>>>>>adrien
 }
 
 .mult {
-  width: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-<<<<<<< HEAD
-=======
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-left: black solid 1px;
-  background-color: rgba(4, 32, 2, 0.2);
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-left: black solid 1px;
+    background-color: rgba(4, 32, 2, 0.2);
 }
 
 .mult button {
->>>>>>> adrien
-  width: 100%;
-  height: 20%;
-  outline: transparent;
-  background-image: url(../images/wooden-textured-background.jpg);
+    width: 100%;
+    height: 20%;
+    outline: transparent;
+    background-image: url(../images/wooden-textured-background.jpg);
 }
 
 .clicker {
-  width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-<<<<<<< HEAD
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100vh;
-=======
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
->>>>>>> adrien
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .clicker button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 250px;
-  height: 250px;
-  background-color: transparent;
-  border-radius: 100%;
-  border: none;
-<<<<<<< HEAD
-  cursor: url("../images/hammer.png"), auto;
-  outline: none;
-  justify-items: flex-end;
-=======
-  outline: transparent;
-  margin-top: 40%;
->>>>>>> adrien
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    background-color: transparent;
+    border-radius: 100%;
+    border: none;
+    outline: transparent;
+    margin-top: 40%;
 }
 
 .clicker button :active {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
 }
 
 .clicker button img {
-  width: 80%;
+    width: 80%;
 }
 
-<<<<<<< HEAD
-.container .bonus {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 10%;
-}
-
-.container .bonus button {
-  width: 100%;
-  font-size: 20px;
-  font-family: 'Luckiest Guy', cursive;
-  background: url("../images/bck.png");
-  cursor: url("../images/hammer.png"), auto;
-  border: none;
-  outline: none;
-  border-radius: 20px;
-  margin: 10px;
-}
-
-.container .bonus button img {
-  width: 50px;
-  height: 30px;
-  padding-right: 10px;
-=======
 .buche {
-  padding-top: 10%;
+    padding-top: 10%;
 }
 
 .score {
-  font-size: 200%;
-  font-family: 'Luckiest Guy', cursive;
->>>>>>> adrien
+    font-size: 200%;
+    font-family: 'Luckiest Guy', cursive;
 }
 
 .autoClickers {
-  width: 20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-<<<<<<< HEAD
-  width: 10%;
-=======
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-right: black solid 1px;
-  background-color: rgba(4, 32, 2, 0.2);
->>>>>>> adrien
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-right: black solid 1px;
+    background-color: rgba(4, 32, 2, 0.2);
 }
 
 .autoClickers button {
-  width: 100%;
-<<<<<<< HEAD
-  font-size: 20px;
-  font-family: 'Luckiest Guy', cursive;
-  background: url("../images/bck.png");
-  border: none;
-  cursor: url("../images/hammer.png"), auto;
-  outline: none;
-  border-radius: 20px;
-  margin: 10px;
+    width: 100%;
+    height: 20%;
+    outline: transparent;
+    background-image: url(../images/wooden-textured-background.jpg);
 }
 
-.container .auto button img {
-  width: 50px;
-  height: 30px;
-  padding-right: 10px;
-=======
-  height: 20%;
-  outline: transparent;
-  background-image: url(../images/wooden-textured-background.jpg);
->>>>>>> adrien
-}
+
 /*# sourceMappingURL=style.css.map */
