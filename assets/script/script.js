@@ -22,17 +22,19 @@ document.getElementById('click').addEventListener('click', () => {
         document.getElementById("castor").src = "./assets/images/castor2.png";
     }
     /*  */
-    if (randomBtn == score) {
+    /* if (randomBtn == score) {
         setTimeout(() => {
             hideBTN = document.getElementById("randomID").style.visibility = 'visible';
-            score = score + 1000;
-            document.getElementById('score').innerHTML = `<img src="./assets/images/buche.png">  ${score}`;
-            console.log("deuxieme" + score);
-        }, 1000);
 
+        }, 1000);
+        score = score + 1000;
+        document.getElementById('score').innerHTML = `<img src="./assets/images/buche.png">  ${score}`;
+        console.log("deuxieme" + score);
+        randomBtn = Math.floor(Math.random() * (10 - 1) + 1);
     } else if (randomBtn != score) {
         hideBTN = document.getElementById("randomID").style.visibility = 'hidden';
-    }
+    }*/
+
 
 
 });
