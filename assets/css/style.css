@@ -20,8 +20,13 @@ body {
   background-position: center;
 }
 
+<<<<<<< HEAD
 .nooo {
   fill: red;
+=======
+button:hover {
+  cursor: pointer;
+>>>>>>> adrien
 }
 
 .mult {
@@ -43,6 +48,9 @@ body {
 }
 
 .mult button {
+  color: white;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 2rem;
   width: 100%;
   height: 20%;
   outline: transparent;
@@ -51,6 +59,10 @@ body {
 }
 
 .clicker {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -77,8 +89,12 @@ body {
   border-radius: 100%;
   border: none;
   outline: transparent;
+<<<<<<< HEAD
   margin-top: 40%;
   color: white;
+=======
+  margin-top: 25rem;
+>>>>>>> adrien
 }
 
 .clicker button :active {
@@ -87,7 +103,7 @@ body {
 }
 
 .clicker button img {
-  width: 80%;
+  width: 15rem;
 }
 
 .buche {
@@ -95,7 +111,7 @@ body {
 }
 
 .score {
-  font-size: 200%;
+  font-size: 2.5rem;
   font-family: 'Luckiest Guy', cursive;
 }
 
@@ -118,10 +134,37 @@ body {
 }
 
 .autoClickers button {
+  color: white;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 2rem;
   width: 100%;
   height: 20%;
   outline: transparent;
   background-image: url(../images/wooden-textured-background.jpg);
   color: white;
+}
+
+.cursor {
+  width: 2.5rem;
+}
+
+.epee {
+  width: 8rem;
+}
+
+.pistol {
+  width: 5rem;
+}
+
+.machinegun {
+  width: 10rem;
+}
+
+.sniper {
+  width: 10rem;
+}
+
+.bazooka {
+  width: 6rem;
 }
 /*# sourceMappingURL=style.css.map */
