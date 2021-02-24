@@ -17,36 +17,23 @@ body {
     cursor: url("../images/hammer.png"), auto;
     background-position: center;
 }
-<<<<<<< HEAD
 
-.nooo {
-    fill: red;
-}
-
-.mult {
-=======
-button:hover{
+button:hover {
     cursor: pointer;
 }
 
-.mult{
->>>>>>> adrien
+.mult {
     width: 20%;
     display: flex;
     align-content: center;
     align-items: center;
     flex-direction: column;
     border-left: black solid 1px;
-<<<<<<< HEAD
     background-color: rgba($color: #042002, $alpha: 0.2);
     button {
-=======
-    background-color: rgba($color: #042002, $alpha: 0.2) ;
-    button{
         color: white;
         font-family: 'Luckiest Guy', cursive;
         font-size: 2rem;
->>>>>>> adrien
         width: 100%;
         height: 20%;
         outline: transparent;
@@ -54,13 +41,9 @@ button:hover{
         color: white;
     }
 }
-<<<<<<< HEAD
 
 .clicker {
-=======
-.clicker{
     user-select: none;
->>>>>>> adrien
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -74,22 +57,12 @@ button:hover{
         border-radius: 100%;
         border: none;
         outline: transparent;
-<<<<<<< HEAD
-        margin-top: 40%;
-        color: white;
+        margin-top: 25rem;
          :active {
             transform: scale(0.9);
         }
         img {
-            width: 80%;
-=======
-        margin-top: 25rem;
-        :active{
-            transform: scale(0.9);
-        }
-        img{
             width: 15rem;
->>>>>>> adrien
         }
     }
 }
@@ -97,14 +70,9 @@ button:hover{
 .buche {
     padding-top: 10%;
 }
-<<<<<<< HEAD
 
 .score {
-    font-size: 200%;
-=======
-.score{
     font-size: 2.5rem;
->>>>>>> adrien
     font-family: 'Luckiest Guy', cursive;
 }
 
@@ -115,16 +83,11 @@ button:hover{
     align-items: center;
     flex-direction: column;
     border-right: black solid 1px;
-<<<<<<< HEAD
     background-color: rgba($color: #042002, $alpha: 0.2);
     button {
-=======
-    background-color: rgba($color: #042002, $alpha: 0.2) ;
-    button{
         color: white;
         font-family: 'Luckiest Guy', cursive;
         font-size: 2rem;
->>>>>>> adrien
         width: 100%;
         height: 20%;
         outline: transparent;
@@ -132,21 +95,27 @@ button:hover{
         color: white;
     }
 }
-.cursor{
+
+.cursor {
     width: 2.5rem;
 }
-.epee{
+
+.epee {
     width: 8rem;
 }
-.pistol{
+
+.pistol {
     width: 5rem;
 }
-.machinegun{
+
+.machinegun {
     width: 10rem;
 }
-.sniper{
-    width: 10rem; 
+
+.sniper {
+    width: 10rem;
 }
-.bazooka{
+
+.bazooka {
     width: 6rem;
 }

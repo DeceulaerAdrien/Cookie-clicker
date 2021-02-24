@@ -1,14 +1,7 @@
-<<<<<<< HEAD
-let score = 100000 /* new Number(document.getElementById('score').textContent) */ ;
-let cursor = 1;
-document.getElementById('clickerMain').addEventListener('click', () => {
-    score++;
-=======
-let score = 1000000 /* new Number(document.getElementById('score').textContent) */ ;
+let score = 50; /* new Number(document.getElementById('score').textContent) */ ;
 
-document.getElementById('clickerMain').addEventListener('click',() => {
-    score ++
->>>>>>> adrien
+document.getElementById('clickerMain').addEventListener('click', () => {
+    score++
     document.getElementById('score').innerHTML = `${score}`
     if (score >= 1000) {
         document.getElementById('castor').src = "./assets/images/castor1.png"
@@ -16,20 +9,11 @@ document.getElementById('clickerMain').addEventListener('click',() => {
     if (score >= 10000) {
         document.getElementById('castor').src = "./assets/images/castor2.png"
     }
-})
-<<<<<<< HEAD
+    if (score >= 10) {
+        document.getElementById("clickOne").innerHTML = 'cursor x2';
+    }
+});
 
-document.getElementById('marteau').addEventListener('click', () => {
-
-    if (score >= (cursor * (cursor + 1) * 50)) {
-        score = score - (cursor * (cursor + 1) * 50);
-        document.getElementById('score').innerHTML = `${score}`;
-        document.getElementById('marteau').innerHTML = `<img src="./assets/images/2087470.svg"> ${cursor}  ` + (cursor * (cursor + 1) * 50);
-        cursor += 1;
-        setInterval(function() {
-            document.getElementById('clickerMain').click();
-        }, 10000 / cursor);
-=======
 let cursor = 1;
 document.getElementById('cursor').addEventListener('click', () => {
 
@@ -40,12 +24,28 @@ document.getElementById('cursor').addEventListener('click', () => {
         cursor += 1;
         setInterval(function() {
             document.getElementById('clickerMain').click();
+
         }, 5000 / cursor);
->>>>>>> adrien
+
     } else {
         cursor = cursor;
     }
-}); 
+});
+document.getElementById("clickOne").addEventListener("click", () => {
+
+    score = (score * 2) - 1;
+
+    /* clearInterval(stop);*/
+
+});
+if (score == 60) {
+    score /= 2;
+}
+
+
+
+
+
 let epee = 1;
 let bonusEpee = 3;
 document.getElementById('epee').addEventListener('click', () => {
@@ -78,7 +78,7 @@ document.getElementById('pistol').addEventListener('click', () => {
         pistol = pistol;
     }
 });
-let fusil =1;
+let fusil = 1;
 let bonusFusil = 15;
 document.getElementById('machinegun').addEventListener('click', () => {
 
@@ -94,7 +94,7 @@ document.getElementById('machinegun').addEventListener('click', () => {
         fusil = fusil;
     }
 });
-let sniper =1;
+let sniper = 1;
 let bonusSniper = 31;
 document.getElementById('sniper').addEventListener('click', () => {
 
@@ -110,7 +110,7 @@ document.getElementById('sniper').addEventListener('click', () => {
         sniper = sniper;
     }
 });
-let bazooka =1;
+let bazooka = 1;
 let bonusBazooka = 62;
 document.getElementById('bazooka').addEventListener('click', () => {
 
