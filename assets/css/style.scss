@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('../script/script.js');
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    font-size: 20px;
+    font-family: 'Luckiest Guy', cursive;
+    background-position: center;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.clicker {
+    user-select: none;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    button {
+        display: flex;
+        justify-content: center;
+        width: 250px;
+        height: 250px;
+        background-color: transparent;
+        border-radius: 100%;
+        border: none;
+        outline: transparent;
+        margin-top: 25rem;
+         :active {
+            transform: scale(0.9);
+        }
+        img {
+            width: 15rem;
+        }
+    }
+}
+
+.buche {
+    padding-top: 10%;
+}
+
+.score {
+    font-size: 2.5rem;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.autoClickers {
+    width: 20%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: black solid 1px;
+    background-color: rgba($color: #042002, $alpha: 0.2);
+    button {
+        color: white;
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 2rem;
+        width: 100%;
+        height: 20%;
+        outline: transparent;
+        background-image: url(../images/wooden-textured-background.jpg);
+        color: white;
+    }
+}
+
+.cursor {
+    width: 2.5rem;
+}
+
+.epee {
+    width: 8rem;
+}
+
+.pistol {
+    width: 5rem;
+}
+
+.machinegun {
+    width: 10rem;
+}
+
+.sniper {
+    width: 10rem;
+}
+
+.bazooka {
+    width: 6rem;
+}
