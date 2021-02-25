@@ -17,7 +17,7 @@ The goal was to improve our skills like JS, team working and deal with Git confl
 At BeCode as students.
 Currently in full remote. 
 
-[Full remote working](https://giphy.com/gifs/7TcdtHdIE3ytVLEJGb/html5)
+![Working from home](https://media.giphy.com/media/7TcdtHdIE3ytVLEJGb/giphy.gif)
 
 ## HOW ?
 
