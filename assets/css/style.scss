@@ -14,32 +14,11 @@ body {
     background-color: #464646;
     font-size: 20px;
     font-family: 'Luckiest Guy', cursive;
-    cursor: url("../images/hammer.png"), auto;
     background-position: center;
 }
 
 button:hover {
     cursor: pointer;
-}
-
-.mult {
-    width: 20%;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-left: black solid 1px;
-    background-color: rgba($color: #042002, $alpha: 0.2);
-    button {
-        color: white;
-        font-family: 'Luckiest Guy', cursive;
-        font-size: 2rem;
-        width: 100%;
-        height: 20%;
-        outline: transparent;
-        background-image: url(../images/wooden-textured-background.jpg);
-        color: white;
-    }
 }
 
 .clicker {
